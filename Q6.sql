@@ -1,0 +1,1 @@
+select max(r.votecool) , max(r.votefunny),max(r.voteuseful) from REVIEW r where r.BusinessID in (select b.BusinessID from BUSINESS b where b.address = '%CA');

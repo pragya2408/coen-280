@@ -1,0 +1,1 @@
+select u.firstname from YELP_USER u, REVIEW r, BUSINESS bu where bu.address = '% OH' and bu.BusinessID = r.BusinessID and r.ReviewID = u.YELPID;

@@ -1,0 +1,1 @@
+select r.BUSINESS_ID, u.FIRST_NAME from REVIEW r, YELP_USER u where (r.stars,r.BUSINESS_ID) in (select max(stars),BusinessID from REVIEW group by BusinessID) and r.AUTHOR = u.YELP_ID order by r.BusinessID;

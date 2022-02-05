@@ -1,0 +1,1 @@
+select  c.BusinessID, c.INFO from CHECKIN c where c.BUSINESS_ID in (select r.BusinessID from REVIEW r group by r.BusinessID having count(1) >= 2);

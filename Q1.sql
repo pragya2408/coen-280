@@ -1,0 +1,1 @@
+select BusinessName from BUSINESS  where BusinessID in(select distinct BusinessID from REVIEWS);
